@@ -17,8 +17,8 @@ body {
 }
 
 .brand-title {
-  font-size: 1.5rem;
-  margin: .5rem;
+  height: 60px;
+  margin: 5px;
 }
 
 .navbar-links {
@@ -33,6 +33,7 @@ body {
 
 .navbar-links li {
   list-style: none;
+
 }
 
 .navbar-links li a {
@@ -43,7 +44,7 @@ body {
 }
 
 .navbar-links li:hover {
-  background-color: #555;
+  background-color: rgba(85, 85, 85, 0.57);
 }
 
 .toggle-button {
@@ -65,10 +66,45 @@ body {
 }
 
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: rgba(95, 47, 47, 0.24);
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  @media all and (max-width: 800px) {
+    position: relative;
+    background: transparent;
+  }
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(85, 85, 85, 0.57);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .header {
-  //background: url("assets/images/house.png") center center;
-  //background-size: cover;
-  background: rgba(165, 42, 42, 0.38);
+  background: url("assets/images/house.png") center center;
+  background-size: cover;
   height: 100%;
   width: 100%;
 
@@ -78,7 +114,7 @@ body {
     padding: 7rem 5rem 10rem;
     font-family: "Roboto Regular", serif;
   }
-  
+
   @media all and (max-width: 800px) {
     &__text-block {
       width: 90%;
@@ -90,23 +126,47 @@ body {
 .cards {
   padding: 2rem 0;
   width: 100%;
-  background: rgba(255, 74, 74, 0.18);
   display: flex;
   justify-content: space-around;
 
   .card-item {
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.47);
     width: 25%;
     height: 60vh;
-    background: rgba(74, 228, 255, 0.38);
+    background: white;
+    text-align: center;
+
+    .option-img {
+      height: 35%;
+      margin-top: 20px;
+    }
+
+    .card-button {
+      display: flex;
+      margin: 0 auto;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      height: 10%;
+      width: 50%;
+      color: #2087FF;
+      border: 2px solid #2087FF;
+    }
+
+    p {
+      color: grey;
+    }
 
   }
 
   @media all and (max-width: 800px) {
-     display: block;
+    display: block;
 
     .card-item {
+      padding: 2px;
       margin-left: 5%;
       margin-top: 20px;
       width: 90%;
@@ -114,10 +174,74 @@ body {
   }
 }
 
+.card-item:hover {
+  transform: rotate(20deg);
+  border: 2px solid #2087FF;
+  transition: 1s;
+
+  .card-button {
+    background: #2087FF ;
+    color: white;
+  }
+}
+
 .footer {
   width: 100%;
-  height: 20vh;
-  background: rgba(119, 193, 125, 0.44);
+  height: 15vh;
+  background: #494949;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+
+  .footer-logo {
+    height: 70px;
+  }
+
+  .footer-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-links li {
+    list-style: none;
+  }
+
+  .footer-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+
+  .footer-links li:hover {
+    background-color: #555;
+  }
+
+  .year-label {
+    align-self: flex-end;
+    color: white;
+  }
+
+  @media all and (max-width: 800px) {
+    height: 20vh;
+    justify-content: center;
+    flex-direction: column;
+
+    .footer-logo {
+      height: 60px;
+    }
+
+    .footer-links ul {
+      display: none;
+    }
+
+    .year-label {
+      margin-top: 10px;
+      align-self: center;
+    }
+  }
 }
 
 

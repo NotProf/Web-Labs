@@ -11,7 +11,9 @@
 <header class="header">
     <nav class="navbar">
 
-        <div class="brand-title">Brand Name</div>
+        <div>
+            <img src="assets/images/logo.png" class="brand-title" alt="logo">
+        </div>
 
         <a href="#" id="toggle" class="toggle-button">
             <span class="bar"></span>
@@ -21,8 +23,17 @@
 
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Послуги</a></li>
+                <li>
+                    <a href="#">Головна</a>
+                </li>
+                <li  class="dropdown">
+                    <a href="#">Послуги</a>
+                    <div class="dropdown-content">
+                        <a href="#">Купити Будинок</a>
+                        <a href="#">Продати Будинок</a>
+                        <a href="#">Орендувати Будинок</a>
+                    </div>
+                </li>
                 <li><a href="#">Контакти</a></li>
                 <li><a href="#">Про нас</a></li>
             </ul>
@@ -51,22 +62,80 @@
     </section>
 </header>
 
-<section>
+<main>
 
-    <div class="cards">
+    <section>
 
-        <div class="card-item"></div>
-        <div class="card-item"></div>
-        <div class="card-item"></div>
+        <div class="cards">
 
-    </div>
+            <div class="card-item">
+                <img class="option-img" src="assets/images/Buy_a_home.png" alt="">
+                <h1>Купити будинок</h1>
 
-</section>
+                <p>
+                    Знайдіть своє місце за допомогою захоплюючого досвіду фотографій та більшості списків, включаючи речі, яких ви більше ніде не знайдете.
+                </p>
+
+                <div role="button" class="card-button">
+                    Знайти будинок
+                </div>
+
+            </div>
+            <div class="card-item">
+                <img class="option-img" src="assets/images/Sell_a_home.png" alt="">
+                <h1>Купити будинок</h1>
+
+                <p>
+                    Незалежно від того, чи отримуєте ви грошову пропозицію через Offers або ви хочете продавати традиційно, ми можемо допомогти вам орієнтуватися на успішний продаж.
+                </p>
+
+                <div role="button" class="card-button">
+                    Продати будинок
+                </div>
+            </div>
+            <div class="card-item">
+                <img class="option-img" src="assets/images/Rent_a_home.png" alt="">
+                <h1>Орендувати будинок</h1>
+
+                <p>
+                    Ми створюємо безперебійну роботу в Інтернеті - від покупок у найбільшій орендовій мережі, до подання заявок та оплати оренди.
+                </p>
+
+                <div role="button" class="card-button">
+                    Орендувати будинок
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+</main>
 
 <footer>
+
     <div class="footer">
 
+        <div>
+            <img src="assets/images/logo.png" class="footer-logo" alt="logo">
+        </div>
+
+        <div class="year-label">
+            © 2021
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Про нас</a></li>
+            </ul>
+
+        </div>
     </div>
+
 </footer>
 
 <script src="index.js"></script>
