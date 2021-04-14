@@ -96,6 +96,16 @@ body {
   height: 60vh;
   background: rgba(74, 228, 255, 0.38);
 }
+@media all and (max-width: 800px) {
+  .cards {
+    display: block;
+  }
+  .cards .card-item {
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 90%;
+  }
+}
 
 .footer {
   width: 100%;
