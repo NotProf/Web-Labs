@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header class="header" style="padding-bottom: 10rem">
+    <nav class="navbar">
+
+        <div>
+            <img src="../assets/images/logo.png" class="brand-title" alt="logo">
+        </div>
+
+        <a href="#" id="toggle" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="navbar-links">
+            <ul>
+                <li>
+                    <a href="../index.html">Головна</a>
+                </li>
+                <li class="dropdown">
+                    <a href="services.html">Послуги</a>
+                    <div class="dropdown-content">
+                        <a href="services.html">Купити Будинок</a>
+                        <a href="services.html">Продати Будинок</a>
+                        <a href="services.html">Орендувати Будинок</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="about.html">Про нас</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="form-section">
+        <div class="container">
+
+            <h1>Contact us</h1>
+            <form id="contact-form" method="post">
+
+
+                <input type="text" id="fname" name="firstname" placeholder="Ваше ім'я">
+
+
+                <input type="text" id="lname" name="lastname" placeholder="Ваше прізвище">
+
+
+                <input type="text" id="subject" name="lastname" placeholder="Тема">
+
+                <textarea id="message" name="subject" placeholder="Введіть повідомлення.." style="height:150px"></textarea>
+
+                <div id="error" class="error-message">Заповніть усі поля!</div>
+
+                <input type="submit" value="Надіслати повідомлення">
+
+            </form>
+        </div>
+    </section>
+</header>
+<footer>
+
+    <div class="footer">
+
+        <div>
+            <img src="../assets/images/logo.png" class="footer-logo" alt="logo">
+        </div>
+
+        <div class="year-label">
+            © 2021
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="about.html">Про нас</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+</footer>
+<script src="../js/index.js"></script>
+<script src="../js/contact-form.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKCNHZT1RJ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FKCNHZT1RJ');
+</script>
+</body>
+
+</html>

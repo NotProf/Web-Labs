@@ -134,6 +134,7 @@ body {
   height: 60vh;
   background: white;
   text-align: center;
+  cursor: pointer;
 }
 .cards .card-item .option-img {
   height: 35%;
