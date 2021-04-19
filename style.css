@@ -24,24 +24,20 @@ body {
 .navbar-links {
   height: 100%;
 }
-
 .navbar-links ul {
   display: flex;
   margin: 0;
   padding: 0;
 }
-
 .navbar-links li {
   list-style: none;
 }
-
 .navbar-links li a {
   display: block;
   text-decoration: none;
   color: white;
   padding: 1rem;
 }
-
 .navbar-links li:hover {
   background-color: rgba(85, 85, 85, 0.57);
 }
@@ -188,22 +184,23 @@ body {
 }
 .footer .footer-logo {
   height: 70px;
+  margin-left: 3rem;
 }
-.footer .footer-links ul {
+.footer ul {
   display: flex;
   margin: 0;
   padding: 0;
 }
-.footer .footer-links li {
+.footer li {
   list-style: none;
 }
-.footer .footer-links li a {
+.footer li a {
   display: block;
   text-decoration: none;
   color: white;
   padding: 1rem;
 }
-.footer .footer-links li:hover {
+.footer li:hover {
   background-color: #555;
 }
 .footer .year-label {
@@ -218,6 +215,7 @@ body {
   }
   .footer .footer-logo {
     height: 60px;
+    margin: 0;
   }
   .footer .footer-links ul {
     display: none;

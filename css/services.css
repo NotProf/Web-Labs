@@ -60,10 +60,8 @@ body {
     display: block;
   }
   .responsive-table .col {
-    flex-basis: 100%;
-  }
-  .responsive-table .col {
     display: flex;
+    flex-basis: 100%;
     padding: 10px 0;
   }
   .responsive-table .col:before {

@@ -70,11 +70,10 @@ body {
     li {
       display: block;
     }
-    .col {
-      flex-basis: 100%;
-    }
+
     .col {
       display: flex;
+      flex-basis: 100%;
       padding: 10px 0;
 
       &:before {

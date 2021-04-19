@@ -23,28 +23,27 @@ body {
 
 .navbar-links {
   height: 100%;
-}
 
-.navbar-links ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
 
-.navbar-links li {
-  list-style: none;
+  li {
+    list-style: none;
+  }
 
-}
+  li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
 
-.navbar-links li a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  padding: 1rem;
-}
-
-.navbar-links li:hover {
-  background-color: rgba(85, 85, 85, 0.57);
+  li:hover {
+    background-color: rgba(85, 85, 85, 0.57);
+  }
 }
 
 .toggle-button {
@@ -197,26 +196,27 @@ body {
 
   .footer-logo {
     height: 70px;
+    margin-left: 3rem;
   }
 
-  .footer-links ul {
+  ul {
     display: flex;
     margin: 0;
     padding: 0;
   }
 
-  .footer-links li {
+  li {
     list-style: none;
   }
 
-  .footer-links li a {
+  li a {
     display: block;
     text-decoration: none;
     color: white;
     padding: 1rem;
   }
 
-  .footer-links li:hover {
+  li:hover {
     background-color: #555;
   }
 
@@ -232,6 +232,7 @@ body {
 
     .footer-logo {
       height: 60px;
+      margin: 0;
     }
 
     .footer-links ul {
